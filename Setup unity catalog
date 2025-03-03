@@ -1,0 +1,9 @@
+1) Create Workspace
+2 Create data storage layer
+  2.1 Storage Account
+  2.2 Storage Container
+  2.3 Databricks Access Connector
+  2.4 Blob Storage Contributor role for Access Conector
+
+3 Setup Unity Catalog Metastore
+4 Setup Users and Permission
