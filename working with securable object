@@ -1,0 +1,32 @@
+%run ../utils/cleanup
+
+##Create a DEV and a QA catalog
+CREATE CATALOG IF NOT EXISTS dev;
+CREATE CATALOG IF NOT EXISTS qa;
+
+CREATE DATABASE IF NOT EXISTS dev.demo_bd;
+
+### Privilages in Catalog
+
+GRANT USE CATALOG ON  CATALOG dev TO "group name";
+GRANT ALL PRIVILAGES ON DATABASE dev.demo_db TO "group_name";
+---------------------------------------------------------------
+----------VOLUME-----------------
+
+###CREATING VOLUME UNDER DATABASE
+CREATE VOLUME dev.demo_db.files;
+--u can directly upload any file from ur local machine to this volume.
+--eg. u have uploaded file.csv here 
+
+--this file.csv will be store under root directory of databricks (ADLS) root directory.
+--List the content of your volume.
+
+%fs ls /Volumes/catalog_name/database_name/files.csv/ 
+
+-----------EXTERNAME LOCATION--------in ADLS Gen2
+
+
+
+
+
+ 
