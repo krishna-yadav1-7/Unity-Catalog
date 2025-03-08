@@ -1,0 +1,10 @@
+### Granting Permission First--###
+
+spark.sql('GRANT CREATE CATALOG ON METASTORE TO `user_name`')
+
+spark.sql('GRANT CREATE CATALOG ON METASTORE TO `ramany_yadav107@outlook.com`')
+
+##Start creating Unity catalog databases;
+
+CREATE CATALOG IF NOT EXISTS dev;
+CREATE CATALOG IF NOT EXISTS qa;
